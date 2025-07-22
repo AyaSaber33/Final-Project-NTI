@@ -114,7 +114,7 @@
         <div class="d-flex flex-column gap-3 details-card doctor-details">
           <div class="details d-flex gap-2 align-items-center">
             <img
-              src="../{{asset('images/major.jpg')}}"
+              src="{{asset('images/major.jpg')}}"
               alt="doctor"
               class="img-fluid rounded-circle"
               height="150"
