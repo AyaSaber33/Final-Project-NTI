@@ -26,9 +26,6 @@ class UserController extends Controller
         'password' => bcrypt($userpassword),
     ]);
 
-    return redirect()->route('users.create')->with('success', 'User created!');
-
-
-    // return to_route('users.create'); //change this later, i'm just testing
+    return redirect()->route('users.create');//change this later, i'm just testing
 }
 }

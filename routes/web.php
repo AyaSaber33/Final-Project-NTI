@@ -4,8 +4,12 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/', function () {
-//     return view('register');
+//     return view('login');
 // });
+
+Route::get('/', function () {
+    return view('majors');
+});
 
 Route::get('/users/create',[UserController::class,'create'])->name('users.create');
 Route::post('/users/create',[UserController::class,'store'])->name('users.store');
