@@ -58,23 +58,24 @@
                 </ol>
             </nav>
             <div class="d-flex flex-column gap-3 account-form mx-auto mt-5">
-                <form class="form">
+                <form class="form" action="{{route('users.store')}}"method="POST">
+                    @csrf
                     <div class="form-items">
                         <div class="mb-3">
                             <label class="form-label required-label" for="name">Name</label>
-                            <input type="text" class="form-control" id="name" required>
+                            <input type="text" class="form-control" id="name" name ="username" required>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label required-label" for="phone">Phone</label>
-                            <input type="tel" class="form-control" id="phone" required>
+                            <label class="form-label required-label" for="phone" >Phone</label>
+                            <input type="tel" class="form-control" id="phone" name ="userphone" required>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label required-label" for="email">Email</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <label class="form-label required-label" for="email" >Email</label>
+                            <input type="email" class="form-control" id="email" name ="useremail" required>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label required-label" for="password">password</label>
-                            <input type="password" class="form-control" id="password" required>
+                            <label class="form-label required-label" for="password" >password</label>
+                            <input type="password" class="form-control" id="password" name ="userpassword" required>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">Create account</button>
