@@ -58,6 +58,7 @@
                     <li class="breadcrumb-item active" aria-current="page">majors</li>
                 </ol>
             </nav>
+            <a type="button" class="btn btn-outline-dark navigation--button" href="./index.html">add doctor</a>
             <div class="majors-grid">
                 <div class="card p-2" style="width: 18rem;">
                     <img src="{{asset('images/major.jpg')}}" class="card-img-top rounded-circle card-image-circle"
