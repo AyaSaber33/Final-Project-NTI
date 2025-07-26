@@ -32,4 +32,14 @@ class DoctorController extends Controller
     return redirect()->route('doctors.index');
 }
 
+public function update(request $request , $id){ //not finished yet
+    $doctors = Doctor::find($id);
+    $doctors->name = request()->name;
+    $doctors->major = request()->major;
+    $doctors->discription = request()->discription;
+    $doctors->save();
+
+}
+    
+
 }

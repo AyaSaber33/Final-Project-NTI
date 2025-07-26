@@ -13,4 +13,5 @@ Route::post('/users/create', [UserController::class, 'store'])->name('users.stor
 Route::get('/doctors/create', [DoctorController::class, 'create'])->name('doctors.create');
 Route::post('/doctors/create', [DoctorController::class, 'store'])->name('doctors.store');
 Route::get('/doctors/index', [DoctorController::class, 'index'])->name('doctors.index');
+Route::get('/doctors/edit', [DoctorController::class, 'update'])->name('doctors.update');
 
