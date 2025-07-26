@@ -9,7 +9,8 @@ use App\Models\Doctor;
 class DoctorController extends Controller
 {
     public function index(){
-        return view('doctors.index');
+        $doctors = Doctor::all();
+        return view('doctors.index', compact('doctors'));
     }
 
      public function create(){
@@ -30,4 +31,5 @@ class DoctorController extends Controller
 
     return redirect()->route('doctors.index');
 }
+
 }

@@ -58,105 +58,22 @@
                     <li class="breadcrumb-item active" aria-current="page">majors</li>
                 </ol>
             </nav>
-            <a type="button" class="btn btn-outline-dark navigation--button" href="./index.html">add doctor</a>
+            <a type="button" class="btn btn-outline-dark navigation--button" href="{{route('doctors.create')}}">add doctor</a>
             <div class="majors-grid">
-                <div class="card p-2" style="width: 18rem;">
+
+                
+            @foreach ($doctors as $doctor)
+                 <div class="card p-2" style="width: 18rem;">
                     <img src="{{asset('images/major.jpg')}}" class="card-img-top rounded-circle card-image-circle"
                         alt="major">
                     <div class="card-body d-flex flex-column gap-1 justify-content-center">
-                        <h4 class="card-title fw-bold text-center">Major title</h4>
-                        <a href="./doctors/index.html" class="btn btn-outline-primary card-button">Browse Doctors</a>
+                        <h3 class="card-title fw-bold text-center">{{$doctor->name}}</h3>
+                        <h4 class="card-title fw-bold text-center">{{$doctor->major}}</h4>
+                        <p class="card-title fw-bold text-center">{{$doctor->discription}}</p>
+                        <a href="./doctors/index.html" class="btn btn-outline-primary card-button">Browse Doctor</a>
                     </div>
                 </div>
-                <div class="card p-2" style="width: 18rem;">
-                    <img src="{{asset('images/major.jpg')}}" class="card-img-top rounded-circle card-image-circle"
-                        alt="major">
-                    <div class="card-body d-flex flex-column gap-1 justify-content-center">
-                        <h4 class="card-title fw-bold text-center">Major title</h4>
-                        <a href="./doctors/index.html" class="btn btn-outline-primary card-button">Browse Doctors</a>
-                    </div>
-                </div>
-                <div class="card p-2" style="width: 18rem;">
-                    <img src="{{asset('images/major.jpg')}}" class="card-img-top rounded-circle card-image-circle"
-                        alt="major">
-                    <div class="card-body d-flex flex-column gap-1 justify-content-center">
-                        <h4 class="card-title fw-bold text-center">Major title</h4>
-                        <a href="./doctors/index.html" class="btn btn-outline-primary card-button">Browse Doctors</a>
-                    </div>
-                </div>
-                <div class="card p-2" style="width: 18rem;">
-                    <img src="{{asset('images/major.jpg')}}" class="card-img-top rounded-circle card-image-circle"
-                        alt="major">
-                    <div class="card-body d-flex flex-column gap-1 justify-content-center">
-                        <h4 class="card-title fw-bold text-center">Major title</h4>
-                        <a href="./doctors/index.html" class="btn btn-outline-primary card-button">Browse Doctors</a>
-                    </div>
-                </div>
-                <div class="card p-2" style="width: 18rem;">
-                    <img src="{{asset('images/major.jpg')}}" class="card-img-top rounded-circle card-image-circle"
-                        alt="major">
-                    <div class="card-body d-flex flex-column gap-1 justify-content-center">
-                        <h4 class="card-title fw-bold text-center">Major title</h4>
-                        <a href="./doctors/index.html" class="btn btn-outline-primary card-button">Browse Doctors</a>
-                    </div>
-                </div>
-                <div class="card p-2" style="width: 18rem;">
-                    <img src="{{asset('images/major.jpg')}}" class="card-img-top rounded-circle card-image-circle"
-                        alt="major">
-                    <div class="card-body d-flex flex-column gap-1 justify-content-center">
-                        <h4 class="card-title fw-bold text-center">Major title</h4>
-                        <a href="./doctors/index.html" class="btn btn-outline-primary card-button">Browse Doctors</a>
-                    </div>
-                </div>
-                <div class="card p-2" style="width: 18rem;">
-                    <img src="{{asset('images/major.jpg')}}" class="card-img-top rounded-circle card-image-circle"
-                        alt="major">
-                    <div class="card-body d-flex flex-column gap-1 justify-content-center">
-                        <h4 class="card-title fw-bold text-center">Major title</h4>
-                        <a href="./doctors/index.html" class="btn btn-outline-primary card-button">Browse Doctors</a>
-                    </div>
-                </div>
-                <div class="card p-2" style="width: 18rem;">
-                    <img src="{{asset('images/major.jpg')}}" class="card-img-top rounded-circle card-image-circle"
-                        alt="major">
-                    <div class="card-body d-flex flex-column gap-1 justify-content-center">
-                        <h4 class="card-title fw-bold text-center">Major title</h4>
-                        <a href="./doctors/index.html" class="btn btn-outline-primary card-button">Browse Doctors</a>
-                    </div>
-                </div>
-                <div class="card p-2" style="width: 18rem;">
-                    <img src="{{asset('images/major.jpg')}}" class="card-img-top rounded-circle card-image-circle"
-                        alt="major">
-                    <div class="card-body d-flex flex-column gap-1 justify-content-center">
-                        <h4 class="card-title fw-bold text-center">Major title</h4>
-                        <a href="./doctors/index.html" class="btn btn-outline-primary card-button">Browse Doctors</a>
-                    </div>
-                </div>
-                <div class="card p-2" style="width: 18rem;">
-                    <img src="{{asset('images/major.jpg')}}" class="card-img-top rounded-circle card-image-circle"
-                        alt="major">
-                    <div class="card-body d-flex flex-column gap-1 justify-content-center">
-                        <h4 class="card-title fw-bold text-center">Major title</h4>
-                        <a href="./doctors/index.html" class="btn btn-outline-primary card-button">Browse Doctors</a>
-                    </div>
-                </div>
-                <div class="card p-2" style="width: 18rem;">
-                    <img src="{{asset('images/major.jpg')}}" class="card-img-top rounded-circle card-image-circle"
-                        alt="major">
-                    <div class="card-body d-flex flex-column gap-1 justify-content-center">
-                        <h4 class="card-title fw-bold text-center">Major title</h4>
-                        <a href="./doctors/index.html" class="btn btn-outline-primary card-button">Browse Doctors</a>
-                    </div>
-                </div>
-                <div class="card p-2" style="width: 18rem;">
-                    <img src="{{asset('images/major.jpg')}}" class="card-img-top rounded-circle card-image-circle"
-                        alt="major">
-                    <div class="card-body d-flex flex-column gap-1 justify-content-center">
-                        <h4 class="card-title fw-bold text-center">Major title</h4>
-                        <a href="./doctors/index.html" class="btn btn-outline-primary card-button">Browse Doctors</a>
-                    </div>
-                </div>
-            </div>
+            @endforeach
 
             <nav class="mt-5" aria-label="navigation">
                 <ul class="pagination justify-content-center">
