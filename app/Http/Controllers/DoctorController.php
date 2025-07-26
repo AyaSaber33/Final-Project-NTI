@@ -9,4 +9,25 @@ class DoctorController extends Controller
     public function index(){
         return view('doctors.index');
     }
+
+     public function create(){
+        return view('doctors.create');
+    }
+
+//     public function store(Request $request){
+//         $username = request()->username;
+//         $userphone = request()->userphone;
+//         $useremail = request()->useremail;
+//         $userpassword = request()->userpassword;
+    
+
+//     User::create([
+//         'name' => $username,
+//         'phone' => $userphone,
+//         'email' => $useremail,
+//         'password' => bcrypt($userpassword),
+//     ]);
+
+//     return redirect()->route('users.create');//change this later, i'm just testing
+// }
 }
