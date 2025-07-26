@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Doctor;
+
 
 class DoctorController extends Controller
 {
@@ -14,20 +16,18 @@ class DoctorController extends Controller
         return view('doctors.create');
     }
 
-//     public function store(Request $request){
-//         $username = request()->username;
-//         $userphone = request()->userphone;
-//         $useremail = request()->useremail;
-//         $userpassword = request()->userpassword;
+    public function store(Request $request){
+        $username = request()->name;
+        $major = request()->major;
+        $discription = request()->discription;
     
 
-//     User::create([
-//         'name' => $username,
-//         'phone' => $userphone,
-//         'email' => $useremail,
-//         'password' => bcrypt($userpassword),
-//     ]);
+    Doctor::create([
+        'name' => $username,
+        'major' => $major,
+        'discription' => $discription,
+    ]);
 
-//     return redirect()->route('users.create');//change this later, i'm just testing
-// }
+    return redirect()->route('doctors.index');
+}
 }
